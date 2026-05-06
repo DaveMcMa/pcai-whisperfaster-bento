@@ -1,0 +1,11 @@
+service: "service:FasterWhisperService"
+name: faster-whisper-pl
+include:
+  - "service.py"
+exclude:
+  - "*.ipynb"
+  - "__pycache__"
+  - "*.pyc"
+python:
+  requirements_txt: "requirements.txt"
+  lock_packages: false
